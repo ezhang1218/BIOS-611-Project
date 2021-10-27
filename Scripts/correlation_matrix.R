@@ -1,6 +1,10 @@
 library(ggplot2)
 library(reshape2)
 
+
+source('Scripts/read_data.R')
+
+
 #Check to see if any covariates are highly correlated with another
 continuous_var <- bikes[,c(6,7,8,9)]
 cormat <- round(cor(continuous_var),2)
