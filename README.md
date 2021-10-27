@@ -47,9 +47,6 @@ For example, to create the correlation matrix figure, run in Rstudio terminal:
   
   `make Figures/correlation_matrix.png`
   
-To build the final report, run in Rstudio terminal:
-
-  `make report.pdf`
 
 
 ## Running Shiny App
