@@ -8,13 +8,13 @@ port <- as.numeric(args[[1]])
 
 source('Scripts/read_data.R')
 
+# k-means only works with numerical variables,
+# so don't give the user the option to select
+# a categorical variable
 vars <- setdiff(names(bikes), c("datetime", "season", "holiday", "workingday", "weather", "casual","registered", "count"))
 
 ui <- fluidPage(
-  # k-means only works with numerical variables,
-  # so don't give the user the option to select
-  # a categorical variable
-  
+
   pageWithSidebar(
     headerPanel('Bikes k-means clustering'),
     sidebarPanel(
@@ -30,7 +30,7 @@ ui <- fluidPage(
   
   
 )
-function(input, output, session) {
+server <- function(input, output, session) {
   
   # Combine the selected variables into a new data frame
   selectedData <- reactive({
