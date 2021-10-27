@@ -51,9 +51,7 @@ For example, to create the correlation matrix figure, run in Rstudio terminal:
 
 ## Running Shiny App
 
-The shiny app allows exploration of the dataset used by conference, seed, and postseason. Individuals may want to specifically analyze data from certain conferences (ACC, B10, etc.), certain seeds (1-16), or certain postseason rounds (champions, R68, etc.)
-
-After subsetting data to view it in a table, data may be exported in CSV, excel, or PDF form. Additionally, the data may be printed.
+The shiny app allows us to understand the nature of the data through a k-means clustering.
 
 Please start the Shiny app by first launching docker:
 
