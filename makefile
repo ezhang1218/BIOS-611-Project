@@ -7,8 +7,6 @@ clean:
 #rm -f bikes.csv 
 rm -f Figures/*.png
 #rm -f Figures/*.jpeg
-rm -f report.pdf
-rm -f Rplots.pdf
 
 
 #Dataset needed for project & reading it in ############
