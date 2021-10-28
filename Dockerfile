@@ -4,4 +4,13 @@ RUN R -e "install.packages(c('ggplot2', 'readr', 'tidyverse', 'gridExtra', 'shin
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN adduser rstudio sudo
-RUN apt update -y && apt install -y        ne        sqlite3texlive-basetexlive-binaries        texlive-latex-basetexlive-latex-recommendedtexlive-pictures        texlive-latex-extrapython3-pip
+RUN apt update -y && apt install -y\
+        ne\
+        sqlite3\
+	      texlive-base\
+	      texlive-binaries\
+        texlive-latex-base\
+	      texlive-latex-recommended\
+	      texlive-pictures\
+        texlive-latex-extra\
+	      python3-pip
