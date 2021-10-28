@@ -16,8 +16,11 @@ bikes.csv: Scripts/read_data.R
 Rscript Scripts/read_data.R
 
 #Data needed for the figures
-Figures/correlation_matrix.png: Scripts/read_data.R bikes.csv Scripts/correlation_matrix.R
-Rscript Scripts/correlation_matrix.R
+Figures/correlation_matrix.png: 
+ Scripts/read_data.R 
+ bikes.csv 
+ Scripts/correlation_matrix.R
+ 	Rscript Scripts/correlation_matrix.R
 
 #Shiny app build
 shiny_app:\
