@@ -4,7 +4,7 @@ Bike sharing systems create an easy way for users to rent and return bikes throu
 in the decision making of renting a bike, this becomes an interesting problem for researchers to tackle. 
 
 ## Aliases
-Before we begin, you will need to create a local secret.sh file to define your password. This file should contain: 
+First, you will need to create a local secret.sh file to define your password. This file should contain: 
 
   `#!/bin/bash` 
 
@@ -19,7 +19,7 @@ Once you have created your secret.sh file, run:
 
 ## Usage
 
-To run this project, you will need Docker and the ability to run Docker as your current user. Please begin by building the docker container based on rocker/verse and run the R studio server. 
+Next, you will need Docker and the ability to run Docker as your current user. Please begin by building the docker container and run the R studio server by doing the following. 
 
 
   `docker build . -t project1-env` 
@@ -39,7 +39,7 @@ Now, you should be able to access my files in my folder which contains all the f
 
 ## Makefile
 
-The makefile will help build components of the report. To build figures, run in Rstudio terminal the command
+The makefile will help build major components of the report. To build figures, run in Rstudio terminal the command
 
   `make Figures/<figurename>.png`
   
