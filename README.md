@@ -51,7 +51,7 @@ For example, to create the correlation matrix figure, run in Rstudio terminal:
 
 ## Running Shiny App
 
-The shiny app allows us to understand the nature of the data through a k-means clustering.
+The shiny app allows us to understand the nature of the data through a k-means clustering, grouping certain continuous variables together given a number of clusters.
 
 Please start the Shiny app by first launching docker:
 
