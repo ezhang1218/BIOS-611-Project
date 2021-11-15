@@ -3,4 +3,11 @@ bikes.csv
 secret.sh
 README.html
 Figures/correlation_matrix.png
+Figures/hist_temp_season.png
+Figures/hist_temp_workingday.png
+report.log
+report.synctex.gz
+report.pdf
+report.aux
+report.out
 -t
