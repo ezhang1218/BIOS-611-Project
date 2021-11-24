@@ -10,11 +10,11 @@ clean:
 #rm -f Figures/*.jpeg
 
 report.pdf:\
- main.tex\
+ report.tex\
  Figures/correlation_matrix.png\
  Figures/hist_temp_season.png\
  Figures/hist_temp_workingday.png
-	pdflatex main.tex
+	pdflatex report.tex
 	
 	
 #Dataset needed for project & reading it in ############
